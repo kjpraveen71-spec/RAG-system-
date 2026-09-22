@@ -1,0 +1,39 @@
+langchain
+langchain-community
+chromadb
+groq
+python-dotenv
+sentence-transformers
+langflow
+
+# -----------------------------------------------------------------
+# Library notes
+# -----------------------------------------------------------------
+# langchain             -> core framework for building the RAG pipeline (chains, retrievers)
+# langchain-community   -> community integrations (document loaders, vector store wrappers)
+# chromadb              -> vector database used to store and search document embeddings
+# groq                  -> API client to call Llama 3.1 hosted on Groq for generation
+# python-dotenv         -> loads API keys from a local .env file (keeps secrets out of code)
+# sentence-transformers -> generates embeddings for documents/queries before storing in ChromaDB
+# langflow              -> visual builder used for the local Ollama multi-agent flow version
+#
+# Note: if you ran a local model with Ollama, Ollama itself is installed separately
+# (not via pip) -> see https://ollama.com/download
+#
+# -----------------------------------------------------------------
+# Installation
+# -----------------------------------------------------------------
+# Install everything at once:
+#   pip install -r requirements.txt
+#
+# Or individually:
+#   pip install langchain
+#   pip install langchain-community
+#   pip install chromadb
+#   pip install groq
+#   pip install python-dotenv
+#   pip install sentence-transformers
+#   pip install langflow
+#
+# Set your API key before running (create a .env file, never commit it):
+#   GROQ_API_KEY=your_key_here
